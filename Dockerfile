@@ -1,6 +1,6 @@
 # stage1
 
-FRO node:20 as builder
+FROM node:20 as builder
 
 WORKDIR /mypro
 
