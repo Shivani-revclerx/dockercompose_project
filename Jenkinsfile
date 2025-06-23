@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image using Dockerfile
-                    docker.build("${IMAGE_NAME}:builder", "-f Dockerfile .")
+                    docker.build("${IMAGE_NAME}:latest", "-f Dockerfile .")
                 }
             }
         }
