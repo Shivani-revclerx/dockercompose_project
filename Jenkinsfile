@@ -12,7 +12,7 @@ pipeline {
             steps {
                 // Checkout code from the repository
                 // git 'https://github.com/Shivani-revclerx/dockercompose_project.git' // Replace with your GitHub repo URL
-                git branch: 'main', url: 'https://github.com/Shivani-revclerx/docker_compose_task.git'
+                git branch: 'main', url: 'https://github.com/Shivani-revclerx/dockercompose_project.git'
             }
         }
 
