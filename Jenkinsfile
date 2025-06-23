@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_COMPOSE = '/usr/local/bin/docker-compose' // Path to docker-compose binary
-        IMAGE_NAME = 'my-node-app'
+        IMAGE_NAME = 'jen_pro-app'
         COMPOSE_FILE = 'docker-compose.yml'
     }
 
