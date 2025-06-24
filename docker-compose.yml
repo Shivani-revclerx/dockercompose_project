@@ -1,18 +1,12 @@
 version: '3.8'
 
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: my-node-app-container
+  react-app:
+    build: .
     ports:
-      - "5173:5173" # Expose your app's port
-    networks:
-      - app-network
+      - "3000:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
     environment:
-      - NODE_ENV=development
-
-networks:
-  app-network:
-    driver: bridge
+      - HOST=0.0.0.0
